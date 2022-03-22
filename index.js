@@ -6,6 +6,7 @@ const app = express();
 
 morgan.token("body", (req) => JSON.stringify(req.body));
 
+app.use(express.static('build'))
 app.use(cors());
 app.use(express.json());
 
@@ -36,10 +37,6 @@ const generateId = () => {
   const maxId = persons.length > 0 ? Math.max(...persons.map((p) => p.id)) : 0;
   return maxId + 1;
 };
-
-app.get("/", morgan("tiny"), (request, response) => {
-  response.send("<h1>Hello World!</h1>");
-});
 
 app.get("/info", morgan("tiny"), (request, response) => {
   response.send(
