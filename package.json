@@ -1,0 +1,27 @@
+{
+  "name": "full-stack-open-2022-part3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nachtmotte/full-stack-open-2022-part3.git"
+  },
+  "author": "Matias Palomeque <matias_palomeque@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nachtmotte/full-stack-open-2022-part3/issues"
+  },
+  "homepage": "https://github.com/Nachtmotte/full-stack-open-2022-part3#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
